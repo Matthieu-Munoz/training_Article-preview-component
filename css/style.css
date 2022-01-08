@@ -11,6 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: none;
 }
 
 body {
@@ -50,7 +51,7 @@ article {
     padding-bottom: 1rem;
 }
 
-.article__main--title{
+.article__main--title {
     font-weight: 600;
     font-size: 17px;
 }
@@ -58,16 +59,15 @@ article {
 .article__main--resume {
     margin-top: 1rem;
     font-size: 14px;
-    font-weight: 400;
     color: var(--dark-grey-blue);
 }
 
 
-.article__footer--author {
-    padding: 1rem 2rem;
+.article__author {
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
     display: flex;
     align-items: center;
-
 }
 
 .author__img {
@@ -75,10 +75,12 @@ article {
     width: 3rem;
     border-radius: 50%;
 }
+
 .author__info {
     padding-left: 1rem;
 }
-.author__info--date{
+
+.author__info--date {
     color: var(--grey);
 }
 
@@ -88,15 +90,32 @@ article {
     width: 2rem;
     border-radius: 50%;
     background-color: var(--light-grey);
-    border: none;
     color: var(--dark-grey-blue);
 }
 
+@media screen and (min-width: 1280px) {
+    body {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+    }
 
+    .wrapper {
+        max-width: 800px;
+    }
 
+    article {
+        display: flex;
+    }
 
-
-
+    .article__header {
+        width: 70rem;
+        height: 20rem;
+        border-radius: 0;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+}
 
 /* Style attribution */
 .attribution {
