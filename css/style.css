@@ -1,0 +1,120 @@
+:root {
+    --very-dark-grey-blue: hsl(217, 19%, 35%);
+    --dark-grey-blue: hsl(214, 17%, 51%);
+    --grey: hsl(212, 23%, 69%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(210, 46%, 95%);
+    --main-bg: hsl(210, 46%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-bg);
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0.05rem;
+}
+
+.wrapper {
+    max-width: 440px;
+    padding: 2rem;
+    margin: auto;
+}
+
+article {
+    background-color: var(--white);
+    border-radius: 1rem;
+    color: var(--very-dark-grey-blue);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.article__header {
+    height: 13rem;
+    background-image: url('../images/drawers.jpg');
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+
+.article__main {
+    padding: 2rem;
+    padding-bottom: 1rem;
+}
+
+.article__main--title{
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.article__main--resume {
+    margin-top: 1rem;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--dark-grey-blue);
+}
+
+
+.article__footer--author {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.author__img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+.author__info {
+    padding-left: 1rem;
+}
+.author__info--date{
+    color: var(--grey);
+}
+
+.author--share-btn {
+    margin-left: auto;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: var(--light-grey);
+    border: none;
+    color: var(--dark-grey-blue);
+}
+
+
+
+
+
+
+
+/* Style attribution */
+.attribution {
+    font-size: 11px;
+    color: var(--very-dark-grey-blue);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.attribution a {
+    color: #2c6553;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: #2c6553;
+    font-weight: 600;
+}
