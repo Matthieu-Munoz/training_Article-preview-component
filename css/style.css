@@ -176,8 +176,8 @@ article {
     }
 
     .author__socials--visible {
-        top: -45px;
-        left: 208px;
+        top: -50px;
+        left: 203px;
         display: flex;
         justify-content: space-evenly;
         width: 250px;
